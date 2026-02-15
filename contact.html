@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charles | School Project Website</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right,#74ebd5,#9face6);
+      text-align:center;
+      transition:0.4s;
+    }
+
+    .dark{
+      background:#121212;
+      color:white;
+    }
+
+    header{
+      padding:40px 15px;
+      background: linear-gradient(45deg,#1abc9c,#3498db);
+      color:white;
+    }
+
+    nav{
+      background: rgba(0,0,0,0.85);
+      padding:12px;
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      color:white;
+      margin:10px;
+      text-decoration:none;
+      font-weight:bold;
+      padding:8px 12px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      background:#1abc9c;
+      color:black;
+    }
+
+    button{
+      padding:10px 16px;
+      border:none;
+      border-radius:20px;
+      cursor:pointer;
+      background:#1abc9c;
+      font-weight:bold;
+      margin-top:10px;
+    }
+
+    section{
+      padding:30px 15px;
+    }
+
+    .card{
+      background:white;
+      margin:20px auto;
+      padding:20px;
+      border-radius:15px;
+      max-width:650px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .dark .card{
+      background:#1f1f1f;
+    }
+
+    ul{
+      list-style:none;
+      padding:0;
+    }
+
+    ul li{
+      background:#3498db;
+      margin:6px;
+      padding:10px;
+      border-radius:10px;
+      color:white;
+    }
+
+    input, textarea{
+      width:90%;
+      padding:10px;
+      margin:6px;
+      border-radius:10px;
+      border:1px solid #ccc;
+    }
+
+    footer{
+      background:rgba(0,0,0,0.85);
+      color:white;
+      padding:15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>My School Project Website</h1>
+  <p>By Charles</p>
+  <button onclick="toggleDark()">🌙 Dark Mode</button>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#subjects">Subjects</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <div class="card">
+    <h2>Welcome 👋</h2>
+    <p id="type"></p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>My name is Charles. I created this website as my ICT school project.</p>
+  </div>
+</section>
+
+<section id="subjects">
+  <div class="card">
+    <h2>My Subjects</h2>
+    <ul>
+      <li>ICT</li>
+      <li>Computer Science</li>
+      <li>Mathematics</li>
+      <li>English</li>
+      <li>Biology</li>
+      <li>Physics</li>
+      <li>Chemistry</li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="card">
+    <h2>Gallery</h2>
+    <p>Add your school or project pictures here.</p>
+    <img src="https://picsum.photos/300" width="45%">
+    <img src="https://picsum.photos/301" width="45%">
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="card">
+    <h2>Quick Quiz 🧠</h2>
+    <p>What does HTML stand for?</p>
+    <button onclick="alert('Correct! 🎉')">Hyper Text Markup Language</button>
+    <button onclick="alert('Try again ❌')">High Tech Modern Language</button>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact Me</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <br>
+    <button>Send Message</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Charles | School Project</p>
+</footer>
+
+<script>
+  function toggleDark(){
+    document.body.classList.toggle("dark");
+  }
+
+  let text = "This website shows my learning, skills, and school subjects.";
+  let i = 0;
+
+  function typing(){
+    if(i < text.length){
+      document.getElementById("type").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing, 60);
+    }
+  }
+
+  typing();
+</script>
+
+</body>
+</html><!DOCTYPE html><!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+</head>
+<body>
+
+<h1>Contact Me</h1>
+<p>Email: student@example.com</p>
+<p>School: My Secondary School</p>
+
+<a href="index.html">⬅ Back to Home</a>
+
+</body>
+</html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>

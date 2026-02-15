@@ -1,0 +1,245 @@
+<!DOCTYPE html><!DOCTYPE html>  <title>My School Project Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(45deg,#1abc9c,#3498db);
+      color: white;
+      padding: 25px;
+    }
+    nav {
+      background: #2c3e50;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    section {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>My School Project Website</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="subjects.html">Subjects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>This website is my school project. It contains information about my subjects and what I am learning.</p>
+  </div>
+
+  <div class="card">
+    <h2>Purpose</h2>
+    <p>To show my skills in ICT and Computer Science.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Charles | School Project</p>
+</footer>
+
+</body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Charles | Pro School Website</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(to right,#74ebd5,#9face6);
+  text-align:center;
+}
+header{
+  padding:35px;
+  background:linear-gradient(45deg,#1abc9c,#3498db);
+  color:white;
+}
+nav{
+  background:#111;
+  padding:12px;
+  position:sticky;
+  top:0;
+}
+nav a{
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover{color:#1abc9c;}
+section{padding:25px;}
+.card{
+  background:white;
+  margin:15px auto;
+  padding:20px;
+  border-radius:15px;
+  max-width:700px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+input, select{
+  padding:10px;
+  margin:5px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+button{
+  padding:10px 18px;
+  border:none;
+  border-radius:15px;
+  background:#1abc9c;
+  font-weight:bold;
+  cursor:pointer;
+}
+footer{
+  background:#111;
+  color:white;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>My Pro School Website</h1>
+<p>By Charles</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#calculator">Calculator</a>
+<a href="#timetable">Timetable</a>
+<a href="#notes">Notes</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+<div class="card">
+<h2>Welcome 👋</h2>
+<p>This is my professional school project website with smart student tools.</p>
+</div>
+</section>
+
+<!-- MARKS CALCULATOR -->
+<section id="calculator">
+<div class="card">
+<h2>Marks & Grade Calculator 🧮</h2>
+<input type="number" id="mark" placeholder="Enter your mark (0 - 100)">
+<br>
+<button onclick="calc()">Calculate Grade</button>
+<p id="result"></p>
+</div>
+</section>
+
+<!-- TIMETABLE -->
+<section id="timetable">
+<div class="card">
+<h2>My Weekly Timetable 📅</h2>
+<table border="1" width="100%" cellpadding="8">
+<tr><th>Day</th><th>Subject</th></tr>
+<tr><td>Monday</td><td>Maths / ICT</td></tr>
+<tr><td>Tuesday</td><td>Biology / English</td></tr>
+<tr><td>Wednesday</td><td>Computer / Chemistry</td></tr>
+<tr><td>Thursday</td><td>Physics / Maths</td></tr>
+<tr><td>Friday</td><td>ICT / Revision</td></tr>
+</table>
+</div>
+</section>
+
+<!-- NOTES -->
+<section id="notes">
+<div class="card">
+<h2>Study Notes 📚</h2>
+<p>Download learning materials:</p>
+<a href="#">📄 ICT Notes</a><br>
+<a href="#">📄 Maths Notes</a><br>
+<a href="#">📄 Biology Notes</a><br>
+<a href="#">📄 Physics Notes</a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="card">
+<h2>Contact Me</h2>
+<input placeholder="Your Name"><br>
+<input placeholder="Your Email"><br>
+<textarea rows="4" placeholder="Message"></textarea><br>
+<button>Send</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Charles | Pro School Website</p>
+</footer>
+
+<script>
+function calc(){
+  let m = document.getElementById("mark").value;
+  let g = "";
+
+  if(m >= 75) g = "Grade: A (Excellent 🎉)";
+  else if(m >= 65) g = "Grade: B (Very Good 👍)";
+  else if(m >= 50) g = "Grade: C (Good 🙂)";
+  else if(m >= 40) g = "Grade: D (Pass 😐)";
+  else g = "Grade: F (Fail ❌)";
+
+  document.getElementById("result").innerHTML = g;
+}
+</script>
+
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  
+</body>
+
+</html>
